@@ -1,0 +1,15 @@
+**********ADMIN TABLE************
+
+create table admin (fname varchar(50), lname varchar(50), username varchar(50) unique, password varchar(50) unique);
+
+**************STUDENT Table************
+
+create table student(student_id bigint(30) primary key, fname varchar(100), lname varchar(100), contact bigint(10) unique, course varchar(20), stream varchar(30), year int(4));
+
+**************BOOK TABLE**************
+
+create table book(book_id bigint(20) primary key, name varchar(250),  writer varchar(200), publisher  varchar(200),edition varchar(10), year int(4), barno varchar(50) unique);
+
+**************ISSUEBOOK TABLE**************
+
+create table issuebook(book_id bigint(20), name varchar(250), writer varchar(200), student_id bigint(30), fname varchar(100), lname varchar(100), stream varchar(30), issuedate varchar(100), returnbook varchar(20), foreign key(book_id)references book(book_id), foreign key(student_id)references student(student_id));
