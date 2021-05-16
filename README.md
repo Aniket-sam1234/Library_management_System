@@ -12,3 +12,7 @@ The Library Management System is an application developed in JAVA for monitoring
 Frontend: Netbeans IDE 12.3
 
 Backend: MYSQL
+
+Wampserver: 
+
+Download link: https://drive.google.com/file/d/1_MpNQ78-oAoC9v98I1CW121Qqyfw1yVS/view?usp=sharing
